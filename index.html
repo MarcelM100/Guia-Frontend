@@ -3,34 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página personal de Marcel Jose Martinez. Tecnología, desarrollo web y proyectos personales.">
   <title>Marcel Jose Martinez</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Marcel Jose Martinez</h1>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <p>Tengo 23 años y estoy aprendiendo desarrollo web. Me gusta la tecnología, el anime y aprender a crear mis propios proyectos.</p>
+  <header class="header">
+    <a class="logo" href="#inicio" aria-label="Inicio">MJ<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#intereses">Intereses</a>
+      <a href="#enlaces">Enlaces <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-  <img src="https://bclover.jp/assets/img/character/full/main/asta.png" alt="Asta de Black Clover" width="250">
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="nombre">
+      <div class="hero-text" id="sobre-mi">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> 23 AÑOS / APRENDIENDO FRONTEND</p>
+        <h1 id="nombre">Marcel Jose<br><span>Martinez.</span></h1>
+        <p class="intro">Estoy aprendiendo desarrollo web. Me interesa la tecnología y convertir mis ideas en proyectos que pueda compartir.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://github.com/MarcelM100">Mi GitHub <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#intereses">Conoce mis intereses <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note">HTML <span aria-hidden="true">/</span> CSS <span aria-hidden="true">/</span> GITHUB</p>
+      </div>
 
-  <h2>Mis intereses</h2>
-  <ul>
-    <li>La tecnología y la programación.</li>
-    <li>El anime.</li>
-    <li>El diseño de páginas web.</li>
-  </ul>
+      <div class="hero-art">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <span class="art-cross cross-top" aria-hidden="true">+</span>
+        <img src="https://bclover.jp/assets/img/character/full/main/asta.png" alt="Asta de Black Clover" width="600" height="900" fetchpriority="high">
+        <span class="art-cross cross-bottom" aria-hidden="true">+</span>
+      </div>
+    </section>
 
-  <h2>Habilidades que estoy aprendiendo</h2>
-  <ul>
-    <li>Crear páginas con HTML.</li>
-    <li>Organizar textos, imágenes y enlaces.</li>
-    <li>Usar GitHub para guardar mis proyectos.</li>
-  </ul>
+    <div class="section-heading" id="intereses">
+      <p class="eyebrow">UN POCO MÁS SOBRE MÍ</p>
+      <span class="heading-line" aria-hidden="true"></span>
+      <span class="section-index" aria-hidden="true">01 — 02</span>
+    </div>
 
-  <h2>Mis enlaces</h2>
-  <ul>
-    <li><a href="https://www.instagram.com/_aureviabeauty/">Instagram</a></li>
-    <li><a href="https://github.com/MarcelM100">GitHub</a></li>
-  </ul>
+    <div class="profile-grid">
+      <section class="panel" aria-labelledby="intereses-titulo">
+        <div class="panel-heading">
+          <span class="panel-number" aria-hidden="true">01</span>
+          <h2 id="intereses-titulo">Mis intereses</h2>
+        </div>
+        <ul class="details">
+          <li>
+            <h3>Tecnología</h3>
+            <p>Entender cómo funcionan las herramientas que usamos todos los días.</p>
+          </li>
+          <li>
+            <h3>Desarrollo web</h3>
+            <p>Aprender a construir páginas y convertir una idea en algo que funcione.</p>
+          </li>
+          <li>
+            <h3>Diseño</h3>
+            <p>Combinar colores y organizar el contenido para que una página se vea bien.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel" aria-labelledby="habilidades-titulo">
+        <div class="panel-heading">
+          <span class="panel-number" aria-hidden="true">02</span>
+          <h2 id="habilidades-titulo">Lo que estoy aprendiendo</h2>
+        </div>
+        <ul class="details">
+          <li>
+            <h3>HTML <span class="tag">Estructura</span></h3>
+            <p>Crear títulos, párrafos, listas, imágenes y enlaces.</p>
+          </li>
+          <li>
+            <h3>CSS <span class="tag">Estilo</span></h3>
+            <p>Dar forma a una página y adaptarla a distintos tamaños de pantalla.</p>
+          </li>
+          <li>
+            <h3>GitHub <span class="tag">Proyectos</span></h3>
+            <p>Guardar mi código y llevar un registro de los cambios.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="links-section" id="enlaces" aria-labelledby="enlaces-titulo">
+      <div>
+        <p class="eyebrow">SIGAMOS CONECTADOS</p>
+        <h2 id="enlaces-titulo">Mis enlaces<span>.</span></h2>
+      </div>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/_aureviabeauty/"><span>Instagram <small>@_aureviabeauty</small></span><span class="link-arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://github.com/MarcelM100"><span>GitHub <small>@MarcelM100</small></span><span class="link-arrow" aria-hidden="true">↗</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Marcel Jose Martinez</p>
+    <p>Guía Front End <span aria-hidden="true">/</span> 2026</p>
+  </footer>
 </body>
 </html>
